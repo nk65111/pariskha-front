@@ -3,6 +3,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Launch check",
+      "request": "launch",
+      "mainClass": "check",
+      "projectName": "examfront_9c189311"
+    },
+    {
+      "type": "java",
+      "name": "Launch hacker",
+      "request": "launch",
+      "mainClass": "hacker",
+      "projectName": "examfront_9c189311"
+    },
+    {
       "name": "ng serve",
       "type": "pwa-chrome",
       "request": "launch",

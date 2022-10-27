@@ -1,0 +1,12 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.mlr10{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ml10{
+ margin-left: 20px;
+}

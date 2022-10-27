@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+    <a [routerLink]="'/'" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu_book</mat-icon>
+    </a>
+    <span class="ml10">Pariksha</span>
+    <span class="example-spacer"></span>
+    <button *ngIf="!isLogin" routerLink="/login" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" style="margin-right: 10px;" >
+      Login
+    </button>
+
+    <button *ngIf="isLogin" (click)="logout()" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" style="margin-right: 10px;">
+      Logout
+    </button>
+    
+    <button *ngIf="!isLogin" [routerLink]="'/signup'" mat-icon-button class="example-icon favorite-icon mlr10" aria-label="Example icon-button with heart icon">
+        Register
+    </button>
+
+    <button routerLink="/admin/profile" *ngIf="isLogin" mat-icon-button class="example-icon favorite-icon mlr10" aria-label="Example icon-button with heart icon">
+      {{user.username}}
+  </button>
+  </mat-toolbar>

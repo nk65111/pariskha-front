@@ -1,0 +1,21 @@
+.truncate {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .mb20{
+    margin-bottom: 20px;
+  }
+
+  *{
+    color:  #3f51b5;;
+  }
+
+  

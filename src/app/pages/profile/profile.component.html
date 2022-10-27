@@ -1,0 +1,45 @@
+<mat-card  class="text-center card" *ngIf="user">
+    <mat-card-title >User Profile</mat-card-title>
+
+    <mat-card-content>
+        <div class="bootstarp-wapper">
+            <div class="container">
+                <div class="container mt20">
+                    <img  src="../../../assets/default-profile.png" alt="" class="profile-img">
+                    <h1 mat-card-subtitle>{{user.username}}</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                       <table class="table">
+                           <tr>
+                            <td>user id</td>
+                            <td>{{user.id}}</td>
+                           </tr>
+                          <tr>
+                            <td>Email</td>
+                            <td>{{user.email}}</td>
+                          </tr>
+                          <tr>
+                            <td>Name</td>
+                            <td>{{user.firstName}} {{user.lastName}}</td>
+                          </tr>
+                          <tr>
+                            <td>Phone Number</td>
+                            <td>{{user.phone}}</td>
+                          </tr>
+                          <tr>
+                            <td>Status</td>
+                            <td>{{user.authorities[0].authority}}</td>
+                          </tr>
+                          
+                       </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content> 
+    <mat-card-actions>
+      <button mat-raised-button color="primary">Update</button>
+      <button mat-raised-button color="accent">Share</button>
+    </mat-card-actions>
+</mat-card>
